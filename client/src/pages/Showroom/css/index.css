@@ -1,0 +1,70 @@
+.showroom > .top {
+  position: relative;
+  height: 310px;
+  border-bottom: solid 1px #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.showroom > .top > .title {
+  font-weight: 700;
+  font-size: 60px;
+  color: black;
+}
+
+.showroom > .bottom {
+  padding: 73px 0 246px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 1183px;
+}
+
+.showroom > .bottom > .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 93px;
+}
+
+@media screen and (max-width: 1365px) {
+  .showroom > .top {
+    height: 271px;
+  }
+  .showroom > .top > .title {
+    font-size: 40px;
+  }
+  .showroom > .bottom {
+    padding: 112px 0 273px 0;
+    height: 2256px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .showroom > .top {
+    height: 171px;
+  }
+  .showroom > .top > .title {
+    font-size: 30px;
+  }
+  .showroom > .bottom {
+    padding: 68px 0 204px 0;
+    height: 1692px;
+  }
+  .showroom > .bottom > .wrapper {
+    row-gap: 113px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

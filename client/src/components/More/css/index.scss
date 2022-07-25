@@ -1,0 +1,168 @@
+.more {
+  width: 100%;
+  height: 862px;
+  background-color: #F6F6F6;
+  position: relative;
+
+  &>.wrapper {
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 110px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 481px;
+    align-items: center;
+
+    &>.title {
+      height: fit-content;
+      font-weight: 700;
+      font-size: 35px;
+    }
+
+    &>.list {
+      left: 0;
+      position: absolute;
+      top: 188px;
+      overflow-x: scroll;
+      box-sizing: border-box;
+      width: 100vw;
+      display: flex;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      padding: 0 103px;
+
+      &>.list-wrapper {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        column-gap: 17px;
+
+        &>.card {
+          width: 390px;
+          cursor: pointer;
+
+          &>img {
+            height: 297px;
+          }
+
+          &>.category {
+
+            font-weight: 300;
+            font-size: 15px;
+            margin: 12px 0 10px 0;
+          }
+
+          &>.title {
+            font-weight: 700;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    &>.list::-webkit-scrollbar {
+      display: none;
+    }
+
+    &>button {
+      transition: background-color 0.2s ease-in-out;
+      cursor: pointer;
+      width: 217px;
+      height: 50px;
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding: 0 20.7px 0 17.2px;
+      font-weight: 400;
+      font-size: 15px;
+
+      &>img {
+        width: 50px;
+      }
+    }
+
+    &>button:hover {
+      background-color: #CD3325;
+    }
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .more {
+    height: 560px;
+
+    &>.wrapper {
+      padding-top: 55px;
+      row-gap: 312px;
+
+      &>.title {
+        font-size: 20px;
+      }
+
+      &>.list {
+        top: 105px;
+        padding: 0 32px;
+
+        &>.list-wrapper {
+          column-gap: 9px;
+
+          &>.card {
+            width: 218px;
+
+            &>img {
+              height: 166px;
+            }
+
+            &>.category {
+              margin: 16px 0 3px 0;
+            }
+
+            &>.title {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .more {
+    height: 522px;
+
+    &>.wrapper {
+      padding-top: 46px;
+      row-gap: 276px;
+
+      &>.title {
+        font-size: 18px;
+      }
+
+      &>.list {
+        top: 108px;
+        padding: 0 19px;
+
+        &>.list-wrapper {
+          &>.card {
+            width: 195px;
+
+            &>img {
+              height: 149px;
+            }
+
+            &>.category {
+              font-size: 13px;
+              margin: 11px 0 3px 0;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "steadee-pf"
+  },
+  "targets": {
+    "steadee-pf": {
+      "hosting": {
+        "client": [
+          "viewin"
+        ],
+        "office": [
+          "projectquestionadmin"
+        ]
+      }
+    }
+  }
+}

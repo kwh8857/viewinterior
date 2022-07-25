@@ -1,0 +1,117 @@
+.address-card {
+  width: 100%;
+  display: flex;
+  column-gap: 39px;
+
+  &>.left {
+    width: 381px;
+
+    &>.title {
+      font-weight: 700;
+      font-size: 27px;
+    }
+
+    &>.line {
+      width: 100%;
+      height: 1px;
+      background-color: black;
+      margin: 16px 0 20px 0;
+    }
+
+    &>.content-wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+
+      &>.content {
+        display: flex;
+        font-size: 16px;
+        column-gap: 9px;
+        white-space: nowrap;
+
+        &>.tag {
+          width: 56px;
+          font-weight: 700;
+        }
+
+        &>.time {
+          font-size: 400;
+        }
+      }
+    }
+
+    &>button {
+      margin-top: 17px;
+      cursor: pointer;
+      display: flex;
+      background-color: black;
+      width: 106px;
+      height: 40px;
+      align-items: center;
+      font-weight: 700;
+      font-size: 15px;
+      color: white;
+      box-sizing: border-box;
+      padding: 0 17px 0 13px;
+      justify-content: space-between;
+
+      &>img {
+        width: 13px;
+      }
+
+    }
+  }
+
+  .map:focus-visible {
+    outline: unset;
+    width: 539px;
+    height: 226px;
+  }
+
+}
+
+@media screen and (max-width: 1365px) {
+  .address-card {
+    flex-direction: column;
+    column-gap: unset;
+    row-gap: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .address-card {
+    row-gap: 16px;
+
+    &>.left {
+      width: 100%;
+
+      &>.title {
+        font-size: 20px;
+      }
+
+      &>.line {
+        margin: 6px 0 10px 0;
+      }
+
+      &>.content-wrapper {
+        &>.content {
+          font-size: 14px;
+
+          &>.tag {
+            width: 49px;
+          }
+        }
+      }
+
+      &>button {
+        width: 100%;
+        margin-top: 31px;
+        justify-content: center;
+
+        &>img {
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+}

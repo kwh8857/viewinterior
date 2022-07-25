@@ -1,0 +1,180 @@
+@-webkit-keyframes arrow-moving {
+  from {
+    opacity: 0.1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes arrow-moving {
+  from {
+    opacity: 0.1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.detail {
+  width: 100%;
+}
+
+.detail > .top {
+  position: relative;
+  height: 310px;
+  border-bottom: solid 1px #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.detail > .top > .title {
+  font-weight: 700;
+  font-size: 60px;
+  color: black;
+}
+
+.detail > .bottom {
+  min-height: 1000px;
+}
+
+.detail > .bottom > .wrapper {
+  -webkit-animation: arrow-moving 0.6s;
+          animation: arrow-moving 0.6s;
+  -webkit-animation-timing-function: cubic-bezier(0.8, -0.03, 0.31, 0.93);
+          animation-timing-function: cubic-bezier(0.8, -0.03, 0.31, 0.93);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 46px 0 300px 0;
+}
+
+.detail > .bottom > .wrapper > .title-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 71px;
+          column-gap: 71px;
+  margin-bottom: 49px;
+}
+
+.detail > .bottom > .wrapper > .title-section > .title {
+  width: 319px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+}
+
+.detail > .bottom > .wrapper > .title-section > .subject {
+  width: 412px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 5px;
+}
+
+.detail > .bottom > .wrapper > .title-section > .subject > .category {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.detail > .bottom > .wrapper > .title-section > .subject > .sub {
+  white-space: pre-line;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.detail > .bottom > .wrapper > .template-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 40px;
+}
+
+@media screen and (max-width: 1365px) {
+  .detail > .top {
+    height: 271px;
+  }
+  .detail > .top > .title {
+    font-size: 40px;
+  }
+  .detail > .bottom > .wrapper {
+    padding: 39px 0 236px 0;
+  }
+  .detail > .bottom > .wrapper > .title-section {
+    -webkit-column-gap: 43px;
+            column-gap: 43px;
+    margin-bottom: 43px;
+  }
+  .detail > .bottom > .wrapper > .title-section > .title {
+    width: 219px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .detail > .bottom > .wrapper > .title-section > .subject {
+    width: 320px;
+  }
+  .detail > .bottom > .wrapper > .title-section > .subject > .category {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .detail > .bottom > .wrapper > .title-section > .subject > .sub {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .detail > .bottom > .wrapper > .template-wrapper {
+    row-gap: 23px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .detail > .top {
+    height: 171px;
+  }
+  .detail > .top > .title {
+    font-size: 30px;
+  }
+  .detail > .bottom > .wrapper {
+    padding: 70px 0 299px 0;
+  }
+  .detail > .bottom > .wrapper > .title-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: unset;
+            column-gap: unset;
+    margin-bottom: 109px;
+    row-gap: 30px;
+  }
+  .detail > .bottom > .wrapper > .title-section > .title {
+    width: 228px;
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .detail > .bottom > .wrapper > .template-wrapper {
+    row-gap: 17px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
