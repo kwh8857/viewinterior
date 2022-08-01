@@ -34,7 +34,7 @@ function WhoWeAre({ agent, navigate }) {
         </div>
         <div className="line" />
         <div className="gif-wrapper">
-          <video autoPlay loop muted playsInline preload="metadata">
+          <video autoPlay loop muted playsInline preload="auto">
             {window.safari ? (
               <>
                 <source src="/assets/video/whowe-3.mov" type="video/mp4" />

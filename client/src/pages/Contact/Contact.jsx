@@ -14,7 +14,7 @@ function Contact({ agent }) {
       <div className="wrapper">
         {agent === "pc" ? <Navigation type="who" top={90} /> : undefined}
         <div className="img-wrapper">
-          <video autoPlay loop muted playsInline preload="metadata">
+          <video autoPlay loop muted playsInline preload="auto">
             {window.safari ? (
               <>
                 <source src="/assets/video/contact-3.mov" type="video/mp4" />

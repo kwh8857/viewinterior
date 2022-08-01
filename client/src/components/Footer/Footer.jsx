@@ -9,8 +9,8 @@ function Footer({ agent }) {
           <img src="/assets/common/logo.svg" alt="" />
         </div>
         <div className="content">
-          뷰인테리어 | 대표 : 곽연정 <br /> Tel &nbsp; 053-473-0725 <br /> Email
-          &nbsp; soon2674715@hanmail.net <br />
+          뷰인테리어 | 대표 : 곽연정 <br /> Tel &nbsp; 053-473-0725 |
+          010-9345-9293 <br /> Email &nbsp; soon2674715@hanmail.net <br />
           Address &nbsp; 대구 달서구 달서대로 555 212호
         </div>
       </div>

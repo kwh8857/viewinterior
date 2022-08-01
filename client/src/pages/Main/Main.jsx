@@ -57,7 +57,7 @@ function Main({ agent }) {
               </div>
             </div>
           </div>
-          <video autoPlay loop muted playsInline preload="metadata">
+          <video autoPlay loop muted playsInline preload="auto">
             {window.safari ? (
               <>
                 <source src="/assets/video/main-3.mov" type="video/mp4" />
