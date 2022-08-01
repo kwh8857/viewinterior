@@ -34,7 +34,20 @@ function WhoWeAre({ agent, navigate }) {
         </div>
         <div className="line" />
         <div className="gif-wrapper">
-          <img src="/assets/about/whoweare/about-main.gif" alt="" />
+          <video autoPlay loop muted playsInline preload="metadata">
+            {window.safari ? (
+              <>
+                <source src="/assets/video/whowe-3.mov" type="video/mp4" />
+                <source src="/assets/video/whowe.webm" type="video/webm" />
+              </>
+            ) : (
+              <>
+                <source src="/assets/video/whowe.webm" type="video/webm" />
+                <source src="/assets/video/whowe-3.mov" type="video/mp4" />
+              </>
+            )}
+            지원하지 않는 브라우저입니다.
+          </video>
         </div>
         <img
           src="/assets/about/whoweare/section1.png"

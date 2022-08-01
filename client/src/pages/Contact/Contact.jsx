@@ -14,7 +14,20 @@ function Contact({ agent }) {
       <div className="wrapper">
         {agent === "pc" ? <Navigation type="who" top={90} /> : undefined}
         <div className="img-wrapper">
-          <img src="/assets/contact/contact-main.gif" alt="" />
+          <video autoPlay loop muted playsInline preload="metadata">
+            {window.safari ? (
+              <>
+                <source src="/assets/video/contact-3.mov" type="video/mp4" />
+                <source src="/assets/video/contact.webm" type="video/webm" />
+              </>
+            ) : (
+              <>
+                <source src="/assets/video/contact.webm" type="video/webm" />
+                <source src="/assets/video/contact-3.mov" type="video/mp4" />
+              </>
+            )}
+            지원하지 않는 브라우저입니다.
+          </video>
         </div>
         <div className="content-wrapper">
           <div className="title">CONTACT US</div>
@@ -56,8 +69,10 @@ const ContactSection = styled.main`
       background-color: white;
       overflow: hidden;
       position: relative;
-      & > img {
-        background-color: white;
+      display: flex;
+      justify-content: center;
+      & > video {
+        width: 800px;
       }
     }
     & > .content-wrapper {
@@ -153,6 +168,9 @@ const ContactSection = styled.main`
       & > .img-wrapper {
         width: 211px;
         height: 287.2px;
+        & > video {
+          width: 300px;
+        }
       }
       & > .content-wrapper {
         text-align: center;

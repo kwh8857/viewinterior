@@ -17,10 +17,13 @@ export const WhoSection = styled.div`
     }
     & > .gif-wrapper {
       position: absolute;
-      width: 200px;
+      width: 400px;
       top: 480px;
       z-index: 10;
       transform: translateX(20px);
+      & > video {
+        width: 100%;
+      }
     }
     & > img {
       width: 1013px;
@@ -337,7 +340,7 @@ export const WhoSection = styled.div`
       padding-top: 147px;
       padding-bottom: 432px;
       & > .gif-wrapper {
-        width: 150px;
+        width: 320px;
         top: 400px;
         transform: translateX(-30px);
       }
@@ -511,8 +514,8 @@ export const WhoSection = styled.div`
       padding-top: 210px;
       padding-bottom: 151.5px;
       & > .gif-wrapper {
-        width: 90px;
-        top: 380px;
+        width: 200px;
+        top: 360px;
         transform: translateX(-15px);
       }
       & > .title {

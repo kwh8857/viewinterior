@@ -6,7 +6,7 @@ import Floating from "../../components/Floating/Floating";
 import useScrollFadeIn from "../../lib/useScrollFadeIn";
 import Section2box from "./section/Section2box";
 import Section3Box from "./section/Section3Box";
-import Section4Box from "./section/Section4Box";
+// import Section4Box from "./section/Section4Box";
 import { MainSection, Section2, Section3, Section4 } from "./style/mainstyle";
 
 function Main({ agent }) {
@@ -204,41 +204,41 @@ const section3Arr = [
     img: "s3-3",
   },
 ];
-const section4Arr = [
-  {
-    img: "s4-1",
-    title: "ANDVIEW",
-    sub: "앤드뷰",
-    content: `당사 자사 브랜드로써 인테리어 
-관련 소품, 악세서리 일체 
-주요 사업 : 블라인드, 커튼, 수입수전, 수입조명 등`,
-    logo: "s4-logo1",
-  },
-  {
-    img: "s4-2",
-    title: "VIEWFLEX",
-    sub: "뷰플렉스",
-    content: `당사 자사 브랜드로써 인테리어
-관련 붙박이장, 싱크대 일체
-주요 사업 : 붙박이장, 싱크대 (도장 제품/하이그로시 제품)`,
-    mbcontent: `당사 자사 브랜드로써 인테리어
- 관련 붙박이장, 싱크대 일체
-주요 사업 : 붙박이장, 
-싱크대 (도장 제품/하이그로시 제품)
-`,
-    logo: "s4-logo2",
-  },
-  {
-    img: "s4-3",
-    title: "TOTALIOR",
-    sub: "토탈리어",
-    content: `당사 자사 브랜드로써 AR 시스템
-기술이 접목된 APP 서비스
-주요 사업 : 온라인 견적 문의 및 AR 시스템 접목 기술의 APP 서비스`,
-    mbcontent: `당사 자사 브랜드로써 AR 시스템 
-기술이 접목된 APP 서비스
-주요 사업 : 온라인 견적 문의 및 
-AR 시스템 접목 기술의 APP 서비스`,
-    logo: "s4-logo3",
-  },
-];
+// const section4Arr = [
+//   {
+//     img: "s4-1",
+//     title: "ANDVIEW",
+//     sub: "앤드뷰",
+//     content: `당사 자사 브랜드로써 인테리어
+// 관련 소품, 악세서리 일체
+// 주요 사업 : 블라인드, 커튼, 수입수전, 수입조명 등`,
+//     logo: "s4-logo1",
+//   },
+//   {
+//     img: "s4-2",
+//     title: "VIEWFLEX",
+//     sub: "뷰플렉스",
+//     content: `당사 자사 브랜드로써 인테리어
+// 관련 붙박이장, 싱크대 일체
+// 주요 사업 : 붙박이장, 싱크대 (도장 제품/하이그로시 제품)`,
+//     mbcontent: `당사 자사 브랜드로써 인테리어
+//  관련 붙박이장, 싱크대 일체
+// 주요 사업 : 붙박이장,
+// 싱크대 (도장 제품/하이그로시 제품)
+// `,
+//     logo: "s4-logo2",
+//   },
+//   {
+//     img: "s4-3",
+//     title: "TOTALIOR",
+//     sub: "토탈리어",
+//     content: `당사 자사 브랜드로써 AR 시스템
+// 기술이 접목된 APP 서비스
+// 주요 사업 : 온라인 견적 문의 및 AR 시스템 접목 기술의 APP 서비스`,
+//     mbcontent: `당사 자사 브랜드로써 AR 시스템
+// 기술이 접목된 APP 서비스
+// 주요 사업 : 온라인 견적 문의 및
+// AR 시스템 접목 기술의 APP 서비스`,
+//     logo: "s4-logo3",
+//   },
+// ];
