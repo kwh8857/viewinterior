@@ -540,8 +540,16 @@ export const BusinessBox = styled.div`
   }
 `;
 export const Section4 = styled.section`
-  height: 1452px;
-  & > .wrapper {
+  height: 322px;
+  background-color: #efefef;
+  @media screen and (max-width: 1365px) {
+    height: 181px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 242px;
+  }
+
+  /* & > .wrapper {
     padding-top: 221px;
     box-sizing: border-box;
     display: flex;
@@ -588,7 +596,7 @@ export const Section4 = styled.section`
         row-gap: 180px;
       }
     }
-  }
+  } */
 `;
 export const BrandBox = styled.div`
   display: flex;

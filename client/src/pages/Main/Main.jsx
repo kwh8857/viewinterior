@@ -13,10 +13,8 @@ function Main({ agent }) {
   const navigate = useNavigate();
   const titleRef = useRef(null);
   const section3Ref = useRef(null);
-  const section4Ref = useRef(null);
   useScrollFadeIn(0, titleRef);
   useScrollFadeIn(0, section3Ref);
-  useScrollFadeIn(0, section4Ref);
   useEffect(() => {
     const img = new Image();
     img.src = "/assets/main/main-back.svg";
@@ -110,7 +108,7 @@ function Main({ agent }) {
         </div>
       </Section3>
       <Section4>
-        <div className="wrapper">
+        {/* <div className="wrapper">
           <div className="title" ref={section4Ref}>
             VIEW’s BRAND
           </div>
@@ -121,7 +119,7 @@ function Main({ agent }) {
               );
             })}
           </div>
-        </div>
+        </div> */}
       </Section4>
       <ContactUs agent={agent} />
     </MainSection>

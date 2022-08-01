@@ -21,6 +21,10 @@ function Contact({ agent }) {
           <div className="line" />
           <div className="cat">Phone</div>
           <div className="tel">010-9345-9293</div>
+          <a href="tel:010-9345-9293">
+            <img src="/assets/common/tel.svg" alt="" />
+            <div className="text">전화문의</div>
+          </a>
           <div className="line" />
           <div className="cat">Email</div>
           <div className="email">soon2674715@hanmail.net</div>
@@ -61,6 +65,26 @@ const ContactSection = styled.main`
       flex-direction: column;
       width: 477px;
       font-family: mont;
+      & > a {
+        margin-top: 12.5px;
+        width: 126px;
+        height: 44px;
+        background-color: black;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        padding-left: 12px;
+        column-gap: 9px;
+        margin-bottom: 21px;
+        & > img {
+          width: 20px;
+        }
+        & > .text {
+          font-weight: 700;
+          font-size: 15px;
+          color: white;
+        }
+      }
       & > .title {
         font-size: 40px;
         font-weight: bold;
@@ -69,7 +93,7 @@ const ContactSection = styled.main`
         width: 100%;
         height: 1px;
         background-color: black;
-        margin: 20px 0;
+        margin: 12px 0;
       }
       & > .cat {
         font-size: 15px;
@@ -117,7 +141,8 @@ const ContactSection = styled.main`
     }
   }
   @media screen and (max-width: 767px) {
-    height: unset;
+    height: fit-content;
+    /* min-height: 80%; */
     & > .wrapper {
       height: 872px;
       padding-top: 139px;
@@ -132,6 +157,7 @@ const ContactSection = styled.main`
       & > .content-wrapper {
         text-align: center;
         width: 100%;
+        align-items: center;
         & > .title {
           font-size: 30px;
         }

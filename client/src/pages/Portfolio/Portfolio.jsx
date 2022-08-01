@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "../../components/Card/Card";
+import Floating from "../../components/Floating/Floating";
 import Infinite from "../../components/Infinite/Infinite";
 import Navigation from "../../components/Navgation/Navigation";
 import firebaseApp from "../../config/firebaseApp";
@@ -57,6 +58,7 @@ function Portfolio({ agent }) {
   }, [category, page]);
   return (
     <main className="port">
+      <Floating />
       <div className="top">
         <Navigation type="who" top={90} />
         <div className="title">VIEW PORTFOLIO</div>

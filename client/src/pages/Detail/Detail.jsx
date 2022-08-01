@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import Floating from "../../components/Floating/Floating";
 import More from "../../components/More/More";
 import Navigation from "../../components/Navgation/Navigation";
 import DoubleImage from "../../components/Templates/DoubleImage";
@@ -31,6 +32,7 @@ function Detail() {
 
   return (
     <main className="detail">
+      <Floating />
       <div className="top">
         <Navigation type="who" top={90} />
         <div className="title">VIEW PORTFOLIO</div>
