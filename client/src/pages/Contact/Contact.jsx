@@ -5,7 +5,16 @@ import Navigation from "../../components/Navgation/Navigation";
 function Contact({ agent }) {
   useEffect(() => {
     const img = new Image();
-    img.src = "/assets/contact/contact-main.gif";
+    img.src = "/assets/video/contact-thumbnail.png";
+    const vide = document.createElement("video");
+    const mov = document.createElement("source");
+    const webm = document.createElement("source");
+    mov.type = "video/mp4";
+    mov.src = "/assets/video/contact-3.mov";
+    webm.type = "video/webm";
+    webm.src = "/assets/video/contact.webm";
+    vide.appendChild(mov);
+    vide.appendChild(webm);
     return () => {};
   }, []);
 
@@ -15,6 +24,7 @@ function Contact({ agent }) {
         {agent === "pc" ? <Navigation type="who" top={90} /> : undefined}
         <div className="img-wrapper">
           <video
+            poster="/assets/video/contact-thumbnail.png"
             loop
             muted
             playsInline

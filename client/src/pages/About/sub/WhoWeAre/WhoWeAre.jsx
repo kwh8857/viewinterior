@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import ContactUs from "../../../../components/common/ContactUs";
 import Navigation from "../../../../components/Navgation/Navigation";
 import useScrollFadeIn from "../../../../lib/useScrollFadeIn";
@@ -15,6 +15,21 @@ function WhoWeAre({ agent, navigate }) {
   const section3bottom = useRef(null);
   const section4list = useRef(null);
   const section4top = useRef(null);
+
+  useEffect(() => {
+    const vide = document.createElement("video");
+    const mov = document.createElement("source");
+    const webm = document.createElement("source");
+    mov.type = "video/mp4";
+    mov.src = "/assets/video/whowe-3.mov";
+    webm.type = "video/webm";
+    webm.src = "/assets/video/whowe.webm";
+    vide.appendChild(mov);
+    vide.appendChild(webm);
+
+    return () => {};
+  }, []);
+
   useScrollFadeIn(0, titleRef);
   useScrollFadeIn(0, subRef);
   useScrollFadeIn(0, section2title);
