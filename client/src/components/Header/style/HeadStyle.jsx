@@ -150,6 +150,9 @@ export const HeaderSection = styled.header`
       & > .menu {
         right: 23px;
       }
+      & > .cancel {
+        right: 23px;
+      }
       & > nav {
         width: 320px;
         height: 67px;
