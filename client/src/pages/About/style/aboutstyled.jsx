@@ -803,7 +803,7 @@ export const AboutViewSection = styled.div`
         display: grid;
         row-gap: 1px;
         border-top: solid 1px black;
-        grid-template-rows: 60px 60px 205px 253px 301px 60px;
+        grid-template-rows: 60px 301px 253px 205px 60px 60px;
         & > .box {
           width: 100%;
           background-color: white;
@@ -1052,7 +1052,7 @@ export const AboutViewSection = styled.div`
         }
         & > .list {
           margin-top: 45px;
-          grid-template-rows: 60px 60px 189px 236px 280px 60px;
+          grid-template-rows: 60px 280px 236px 189px 60px 60px;
           & > .box {
             & > .year {
               font-size: 35px;
@@ -1229,7 +1229,7 @@ export const AboutViewSection = styled.div`
         }
         & > .list {
           margin-top: 42px;
-          grid-template-rows: 89px 92px 230px 248px 307px 113px;
+          grid-template-rows: 113px 307px 248px 230px 92px 89px;
           & > .box {
             flex-direction: column;
             justify-content: center;
