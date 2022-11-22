@@ -52,6 +52,10 @@ const NavWrapper = styled.div`
       font-size: 15px;
       font-weight: 500;
       color: ${(props) => (props.type === "who" ? "black" : "white")};
+      transition: font-weight 0.1s ease-in;
+    }
+    & > div:hover {
+      font-weight: bold;
     }
   }
   @media screen and (max-width: 1365px) {

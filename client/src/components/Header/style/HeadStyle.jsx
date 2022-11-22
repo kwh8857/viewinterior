@@ -26,7 +26,6 @@ export const HeaderSection = styled.header`
     }
     & > nav {
       height: 100%;
-      font-weight: 500;
       display: grid;
       align-items: center;
       position: relative;
@@ -43,8 +42,13 @@ export const HeaderSection = styled.header`
           ? "84px"
           : 0};
       & > div {
+        font-weight: 500;
+        transition: font-weight 0.1s ease-in;
         cursor: pointer;
         color: ${(props) => (props.iswhite ? "black" : "white")};
+      }
+      & > div:hover {
+        font-weight: bold;
       }
       & > .bar {
         transition: left 0.2s ease-in-out;
@@ -133,6 +137,10 @@ export const HeaderSection = styled.header`
           font-size: 500;
           font-size: 25px;
           font-family: mont;
+          transition: font-weight 0.1s ease-in;
+        }
+        & > div:hover {
+          font-weight: bold;
         }
       }
     }

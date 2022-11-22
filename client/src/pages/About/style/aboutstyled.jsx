@@ -842,7 +842,7 @@ export const AboutViewSection = styled.div`
   }
   & > .section3 {
     width: 100%;
-    height: 1203px;
+    height: 1405px;
     background-color: #f6f6f6;
     border-top-right-radius: 301px;
     & > .wrapper {
@@ -850,20 +850,22 @@ export const AboutViewSection = styled.div`
       padding-top: 100px;
       display: flex;
       column-gap: 27px;
-      align-items: center;
+
       & > .title {
         writing-mode: vertical-rl;
-        transform: rotate(180deg);
+        transform: rotate(180deg) !important;
         font-family: mont;
         font-size: 120px;
         font-weight: bold;
         width: 170px;
+        text-align: right;
       }
       & > .list {
+        margin-top: 56px;
         width: 841px;
         display: grid;
         row-gap: 94px;
-        grid-template-rows: repeat(3, 200px);
+        grid-template-rows: repeat(4, 200px);
         height: fit-content;
         & > .box {
           width: 100%;
@@ -915,10 +917,51 @@ export const AboutViewSection = styled.div`
       }
     }
   }
-  & > .section4 {
-    height: 1182px;
+  .samsung-section {
+    height: 455px;
     & > .wrapper {
-      padding: 108px 117px 0 117px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 70px;
+      .samsung-content {
+        & > .title {
+          margin: 16px 0;
+          font-weight: 700;
+          font-size: 36px;
+          line-height: 119.3%;
+        }
+        & > .sub {
+          font-weight: 200;
+          font-size: 18px;
+          line-height: 140%;
+        }
+        .samsung-btn {
+          cursor: pointer;
+          margin-top: 16px;
+          width: 106px;
+          height: 40px;
+          font-weight: 700;
+          font-size: 15px;
+          background-color: black;
+          color: white;
+          transition: opacity 0.1s ease-in;
+        }
+        .samsung-btn:hover {
+          opacity: 0.7;
+        }
+      }
+      .samsung-img-wrapper {
+        width: 464px;
+      }
+    }
+  }
+  & > .section4 {
+    height: 1248px;
+    background-color: #474747;
+    & > .wrapper {
+      padding: 174px 117px 0 117px;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
@@ -927,8 +970,10 @@ export const AboutViewSection = styled.div`
           font-family: mont;
           font-size: 25px;
           font-weight: bold;
+          color: white;
         }
         & > .title {
+          color: white;
           font-size: 36px;
           font-weight: bold;
           margin-top: 20px;
@@ -1075,7 +1120,7 @@ export const AboutViewSection = styled.div`
       }
     }
     & > .section3 {
-      height: 861px;
+      height: 1100px;
       & > .wrapper {
         padding-top: 138px;
         column-gap: 50px;
@@ -1117,6 +1162,22 @@ export const AboutViewSection = styled.div`
               }
             }
           }
+        }
+      }
+    }
+    .samsung-section {
+      & > .wrapper {
+        column-gap: 45px;
+        .samsung-content {
+          & > .title {
+            font-size: 25px;
+          }
+          & > .sub {
+            font-size: 13px;
+          }
+        }
+        .samsung-img-wrapper {
+          width: 370px;
         }
       }
     }
@@ -1267,18 +1328,20 @@ export const AboutViewSection = styled.div`
       }
     }
     & > .section3 {
-      height: 2351px;
+      height: 3100px;
       border-top-right-radius: 103px;
       & > .wrapper {
         padding-top: 153px;
         column-gap: unset;
         row-gap: 46px;
         flex-direction: column;
+        align-items: center;
         & > .title {
           writing-mode: unset;
-          transform: unset;
+          transform: unset !important;
           font-size: 35px;
           width: fit-content;
+          text-align: unset;
         }
         & > .list {
           width: 100%;
@@ -1330,10 +1393,23 @@ export const AboutViewSection = styled.div`
         }
       }
     }
-    & > .section4 {
-      height: 1018px;
+    .samsung-section {
+      height: 600px;
       & > .wrapper {
-        padding: 235px 0 0 0;
+        box-sizing: border-box;
+        flex-direction: column;
+        column-gap: unset;
+        justify-content: space-between;
+        padding-top: 50px;
+        .samsug-img-wrapper {
+          width: 100%;
+        }
+      }
+    }
+    & > .section4 {
+      height: 700px;
+      & > .wrapper {
+        padding: 125px 0 0 0;
         & > .content-wrapper {
           & > .sub {
             font-size: 22px;

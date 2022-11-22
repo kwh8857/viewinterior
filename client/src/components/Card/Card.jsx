@@ -27,6 +27,7 @@ function Card({ data }) {
       <div className="main-img">
         <img src={imageurl} alt="" />
       </div>
+      <div className="black-div" />
       <div className="category">
         {category === "space"
           ? "주거공간"

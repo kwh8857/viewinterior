@@ -100,15 +100,15 @@ export default Business;
 
 const section1Arr = [
   {
-    number: 2834,
+    number: 2895,
     title: "거주공간",
   },
   {
-    number: 356,
+    number: 363,
     title: "상업공간",
   },
   {
-    number: 51,
+    number: 62,
     title: "관공서/학교",
   },
 ];

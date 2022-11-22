@@ -92,6 +92,34 @@ function AboutView({ agent, navigate }) {
           </div>
         </div>
       </div>
+      <div className="samsung-section">
+        <div className="wrapper">
+          <div className="samsung-content">
+            <img
+              src="/assets/about/aboutview/samsung-logo.png"
+              srcSet="/assets/about/aboutview/samsung-logo@2x.png 2x,/assets/about/aboutview/samsung-logo@3x.png 3x"
+              alt="view x samsung"
+              className="samsung-logo"
+            />
+            <div className="title">
+              삼성 디지털프라자와 함께하는 <br /> 입주 이사 이벤트
+            </div>
+            <div className="sub">
+              뷰인테리어 이용 시, 삼성디지털프라자의 <br /> 전제품 할인 혜택을
+              드립니다 <br />
+              새로운 집과 함께 새로운 가전들을 만나보세요
+            </div>
+            <button className="samsung-btn">자세히보기</button>
+          </div>
+          <div className="samsung-img-wrapper">
+            <img
+              src="/assets/about/aboutview/samsung.png"
+              srcSet="/assets/about/aboutview/samsung@2x.png 2x, /assets/about/aboutview/samsung@3x.png 3x"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
       <div className="section4">
         <div className="wrapper">
           <div className="content-wrapper" ref={section4Ref}>
@@ -305,5 +333,15 @@ const section3Arr = [
 주요 사업 : 온라인 견적 문의 및 
 AR 시스템 접목 기술의 APP 서비스`,
     logo: "s4-logo3",
+  },
+  {
+    img: "s4-4",
+    title: "NANOFY",
+    sub: "나노파이",
+    content: `나노 다이아의 눈부심을 전하는
+인테리어 및 가정용 코팅제 브랜드 나노파이`,
+    mbcontent: `나노 다이아의 눈부심을 전하는
+인테리어 및 가정용 코팅제 브랜드 나노파이`,
+    logo: "s4-logo4",
   },
 ];

@@ -16,6 +16,9 @@ function NaverMaps({ id, lat, lng, agent }) {
       defaultCenter={{ lat, lng }}
       defaultZoom={16}
       id={`naver-map-${id}`}
+      onclick={() => {
+        console.log("클릭");
+      }}
     >
       <Marker position={new navermaps.LatLng(lat, lng)} />
     </NaverMap>

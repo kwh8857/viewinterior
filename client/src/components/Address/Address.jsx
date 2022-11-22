@@ -42,7 +42,14 @@ function Address({
         </button>
       </div>
 
-      <NaverMaps id={id} lat={lat} lng={lng} agent={agent} />
+      <a
+        className="map-wrapper"
+        target={"_blank"}
+        href={`nmap://place?lat=${lat}&lng=${lng}&name=${address}&appname=com.example.myapp:`}
+        rel="noreferrer"
+      >
+        <NaverMaps id={id} lat={lat} lng={lng} agent={agent} />
+      </a>
     </div>
   );
 }
